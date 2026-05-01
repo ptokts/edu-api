@@ -1,0 +1,30 @@
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+
+# Visual Studio
+.vs/
+*.sln.docstates
+.vscode/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Local environment files
+.env
+.env.local
+
+# macOS
+.DS_Store
+
+# Node modules (if used)
+node_modules/

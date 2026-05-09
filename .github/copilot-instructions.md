@@ -1,11 +1,30 @@
 # Global Project Context: .NET 10 Web API
-You are an AI Development Team. Use the following workflow for all tasks.
+
+This is a .NET 10 Web API project using Clean Architecture principles with MediatR for CQRS patterns.
 
 ## The Workflow
-1. **Analyze as Architect**: Reference `./copilot/architect.md`. Define the structure, patterns, and contracts.
-2. **Implement as Coder**: Reference `./copilot/coder.md`. Write the implementation based on the Architect's plan.
+
+For all tasks, follow this two-phase approach:
+
+1. **Phase 1 - Architect**: Reference `./.github/agents/architect.agent.md`
+   - Define the structure, patterns, and contracts
+   - List required files/folders
+   - Define interface contracts
+   - Describe the data flow
+   - **Stop here if the task is complex and ask for confirmation**
+
+2. **Phase 2 - Developer**: Reference `./.github/agents/developer.agent.md`
+   - Write the implementation based on the Architect's plan
+   - Follow C# 14 and .NET 10 standards
+   - Ensure all code meets the implementation standards
 
 ## Strict Rules
-- Always use C# 14 and .NET 10.
-- Prefer Minimal APIs over Controllers.
-- If the task is complex, STOP after Phase 1 and ask for confirmation.
+
+- **Language & Framework**: Always use C# 14 and .NET 10
+- **API Style**: Prefer Minimal APIs over Controllers
+- **Architecture**: Follow Clean Architecture (Domain, Application, Infrastructure, WebApi layers)
+- **Communication**: Use MediatR for CQRS (Commands/Queries)
+- **Security**: Ensure all endpoints have authorization policies
+- **Data**: Use Fluent API for entity configurations, not Data Annotations
+- **Code Quality**: See `./.github/agents/developer.agent.md` for C# 14 standards and best practices
+- **Complex Tasks**: STOP after Phase 1 and ask for confirmation before proceeding to implementation

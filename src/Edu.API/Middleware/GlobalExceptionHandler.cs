@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Edu.API.Middleware;
+namespace Edu.Api.Middleware;
 
 /// <summary>
 /// Global exception handler middleware for logging and handling unhandled exceptions.

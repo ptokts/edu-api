@@ -1,8 +1,8 @@
 using AutoMapper;
-using Edu.API.Application.DTOs;
-using Edu.API.Domain.Entities;
+using Edu.Logic.DTOs;
+using Edu.Data.Entities;
 
-namespace Edu.API.Application.Mapping;
+namespace Edu.Logic.Mapping;
 
 /// <summary>
 /// AutoMapper profile for weather forecast mappings.

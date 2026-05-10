@@ -1,7 +1,7 @@
-using Edu.API.Application.DTOs;
+using Edu.Logic.DTOs;
 using MediatR;
 
-namespace Edu.API.Application.Queries;
+namespace Edu.Logic.Queries;
 
 /// <summary>
 /// Query to retrieve weather forecasts with optional filters.

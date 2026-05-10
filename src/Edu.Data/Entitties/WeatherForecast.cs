@@ -1,4 +1,4 @@
-namespace Edu.API.Domain.Entities;
+namespace Edu.Data.Entities;
 
 /// <summary>
 /// Represents a weather forecast entity.

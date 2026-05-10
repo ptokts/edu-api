@@ -1,6 +1,6 @@
-using Edu.API.Domain.Entities;
+using Edu.Data.Entities;
 
-namespace Edu.API.Infrastructure.Repositories;
+namespace Edu.Data.Repositories.Interfaces;
 
 /// <summary>
 /// Interface for weather repository operations.

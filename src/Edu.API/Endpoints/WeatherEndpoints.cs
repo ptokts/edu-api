@@ -1,8 +1,8 @@
-using Edu.API.Application.DTOs;
-using Edu.API.Application.Queries;
+using Edu.Logic.DTOs;
+using Edu.Logic.Queries;
 using MediatR;
 
-namespace Edu.API.WebApi.Endpoints;
+namespace Edu.Api.WebApi.Endpoints;
 
 /// <summary>
 /// Weather forecast API endpoints.
@@ -23,20 +23,8 @@ public static class WeatherEndpoints
             .WithDescription("Get weather forecasts with optional filters");
 
         group.MapGet("/forecasts/{id}", GetForecastById)
-            .WithName("GetForecastById") // Name applied directly to the endpoint
+            .WithName("GetForecastById")
             .WithDescription("Get a specific weather forecast by ID");
-    }
-
-    private static RouteGroupBuilder MapGetForecasts(this RouteGroupBuilder group)
-    {
-        group.MapGet("/forecasts", GetForecasts);
-        return group;
-    }
-
-    private static RouteGroupBuilder MapGetForecastById(this RouteGroupBuilder group)
-    {
-        group.MapGet("/forecasts/{id}", GetForecastById);
-        return group;
     }
 
     private static async Task<IResult> GetForecasts(

@@ -1,6 +1,7 @@
-using Edu.API.Domain.Entities;
+using Edu.Data.Entities;
+using Edu.Data.Repositories.Interfaces;
 
-namespace Edu.API.Infrastructure.Repositories;
+namespace Edu.Data.Repositories;
 
 /// <summary>
 /// Mock implementation of the weather repository with sample data.

@@ -1,4 +1,4 @@
-namespace Edu.API.Application.DTOs;
+namespace Edu.Logic.DTOs;
 
 /// <summary>
 /// Data transfer object for weather forecast information.

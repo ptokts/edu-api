@@ -1,7 +1,7 @@
-using Edu.API.Application.Queries;
 using FluentValidation;
+using Edu.Logic.Queries;
 
-namespace Edu.API.Application.Validators;
+namespace Edu.Logic.Validators;
 
 /// <summary>
 /// Validator for the get weather forecasts query.
